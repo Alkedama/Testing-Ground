@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <canvas id="canvas"></canvas>
+
+</body>
+
+<script>
+    'use strict'
+
+    const canvas = document.getElementById("canvas");
+const context = canvas.getContext("2d");
+
+let x = 50; let y = 50;
+
+// Edit the two lines below here ONLY
+x = 1250 % 1000;
+y = 25 * 3;
+
+context.fillStyle = 'green';
+context.fillRect(10, 10, x, y);
+
+console.log(x, y);
+
+  </script>
+</html>
