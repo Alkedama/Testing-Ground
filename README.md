@@ -11,5 +11,6 @@ Feel free to explore the different directories and files within this repository.
 # Technology Used
 
 1. JavaScript
-2. Vite
-3. Git
+2. CSS (SCSS)
+3. Vite
+4. Git
