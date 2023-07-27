@@ -8,6 +8,7 @@ import Header from './components/header'
 import Grid from './projects/grid'
 import GridChrome from './projects/gridChrome'
 import GridAdvance from './projects/gridAdvance'
+import Test from './projects/test'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,7 +18,8 @@ function App() {
     {/* <Header /> */}
     {/* <Grid /> */}
     {/* <GridChrome /> */}
-    <GridAdvance />
+    {/* <GridAdvance /> */}
+    <Test />
     </>
   )
 }
