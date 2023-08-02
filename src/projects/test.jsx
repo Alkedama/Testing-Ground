@@ -11,12 +11,4 @@ const test = () => {
   )
 }
 
-'use strict';
-
-const btnInvoke = document.querySelector('#btnInvoke');
-
-btnInvoke.addEventListener('click', function(e){
-  alert('hello');
-})
-
 export default test
