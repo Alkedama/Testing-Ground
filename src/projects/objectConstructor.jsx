@@ -4,11 +4,11 @@ const objectConstructor = () => {
   )
 }
 
-'user strict'
+'use strict'
 
 // Object
 const bookObject = {
-  title: "The Magna Carta",
+  title: "Object",
   author: "Harihara",
   page: 100,
   read: true
@@ -27,9 +27,11 @@ function bookConstructor(title, author, pages, read){
     }
 }
 
-const rudra = new bookConstructor('Magna Carta', 'Rudra', 200, true);
+const authorOne = new bookConstructor('Object Constructor', 'Rudra', 200, true);
+const authorTwo = new bookConstructor('Object Constructor', 'Savitur', 300, true);
 
-rudra.info();
+authorOne.info();
+authorTwo.info();
 
 // Inherit Object Constructor
 function inheritBook(title, author, pages, read){
@@ -43,29 +45,33 @@ inheritBook.prototype.info = function(){
   console.log(`The ${this.title} by ${this.author} has ${this.pages} pages, ${this.read == true ? 'The book is read' : 'The book is not read yet.'}`);
 }
 
-const authorInherit = new inheritBook('Magna Carta', 'Agni', 300, true);
+const authorInherit = new inheritBook('Inherit Object Constructor', 'Agni', 300, true);
+const authorInheritTwo = new inheritBook('Inherit Object Constructor', 'Yami', 400, true);
 
 authorInherit.info();
+authorInheritTwo.info();
 
 // Setting prototype for Object
 function duplicateBookConstructor(){
 }
 
-function indra(title, author, pages, read){
+duplicateBookConstructor.prototype.info = function(){
+  console.log(`The ${this.title} by ${this.author} has ${this.pages} pages, ${this.read == true ? 'The book is read' : 'The book is not read yet.'}`);
+}
+
+function book(title, author, pages, read){
   this.title = title;
   this.author = author;
   this.pages = pages;
   this.read = read;
 }
 
-indra.prototype = Object.create(duplicateBookConstructor.prototype);
+book.prototype = Object.create(duplicateBookConstructor.prototype);
 
-indra.prototype.info = function(){
-  console.log(`The ${this.title} by ${this.author} has ${this.pages} pages, ${this.read == true ? 'The book is read' : 'The book is not read yet.'}`);
-}
+const authorSettingOne = new book('Setting prototype', 'Indra', 400, true);
+const authorSettingTwo = new book('Setting prototype', 'Hanuman', 500, true);
 
-const authorOne = new indra('Magna Carta', 'Indra', 400, true);
-
-authorOne.info();
+authorSettingOne.info();
+authorSettingTwo.info();
 
 export default objectConstructor
