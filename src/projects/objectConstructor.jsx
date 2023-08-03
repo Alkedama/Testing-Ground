@@ -33,6 +33,9 @@ const authorTwo = new bookConstructor('Object Constructor', 'Savitur', 300, true
 authorOne.info();
 authorTwo.info();
 
+console.log(Object.getPrototypeOf(authorOne) === bookConstructor.prototype);
+console.log(Object.getPrototypeOf(authorOne));
+
 // Inherit Object Constructor
 function inheritBook(title, author, pages, read){
   this.title = title;
@@ -45,11 +48,14 @@ inheritBook.prototype.info = function(){
   console.log(`The ${this.title} by ${this.author} has ${this.pages} pages, ${this.read == true ? 'The book is read' : 'The book is not read yet.'}`);
 }
 
-const authorInherit = new inheritBook('Inherit Object Constructor', 'Agni', 300, true);
+const authorInheritOne = new inheritBook('Inherit Object Constructor', 'Agni', 300, true);
 const authorInheritTwo = new inheritBook('Inherit Object Constructor', 'Yami', 400, true);
 
-authorInherit.info();
+authorInheritOne.info();
 authorInheritTwo.info();
+
+console.log(Object.getPrototypeOf(authorInheritOne) === inheritBook.prototype);
+console.log(authorInheritOne);
 
 // Setting prototype for Object
 function duplicateBookConstructor(){
@@ -74,4 +80,6 @@ const authorSettingTwo = new book('Setting prototype', 'Hanuman', 500, true);
 authorSettingOne.info();
 authorSettingTwo.info();
 
+console.log(Object.getPrototypeOf(authorSettingOne) === book.prototype)
+console.log(Object.getPrototypeOf(authorSettingOne))
 export default objectConstructor
