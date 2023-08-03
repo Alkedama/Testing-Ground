@@ -80,6 +80,19 @@ const authorSettingTwo = new book('Setting prototype', 'Hanuman', 500, true);
 authorSettingOne.info();
 authorSettingTwo.info();
 
-console.log(Object.getPrototypeOf(authorSettingOne) === book.prototype)
-console.log(Object.getPrototypeOf(authorSettingOne))
+console.log(Object.getPrototypeOf(authorSettingOne) === book.prototype);
+console.log(Object.getPrototypeOf(authorSettingOne));
+
+console.log(Object.getPrototypeOf(duplicateBookConstructor.prototype) === Object.prototype);
+console.log(authorSettingOne.valueOf());
+
+console.log(authorSettingOne.hasOwnProperty('valueOf'));
+console.log(Object.prototype.hasOwnProperty('valueOf'));
+console.log(Object.prototype.hasOwnProperty('hasOwnProperty'));
+
+console.log(Object.getPrototypeOf(duplicateBookConstructor.prototype));
+console.log(Object.getPrototypeOf(book.prototype));
+console.log(Object.prototype.valueOf());
+console.log(Object.getPrototypeOf(Object.prototype));
+
 export default objectConstructor
