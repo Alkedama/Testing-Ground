@@ -6,7 +6,7 @@ Welcome to my personal play testing ground! This repository serves as a space fo
 
 In this repository, you will find a collection of projects, code snippets, and experiments related to various technologies and programming languages. The purpose of this play testing ground is to have a dedicated space where I can freely test and prototype without the constraints of a production environment.
 
-Feel free to explore the different directories and files within this repository. Each project or experiment will have its own README file providing more details and instructions on how to run or use it.
+Feel free to explore the different directories and files within this repository.
 
 # Technology Used
 
