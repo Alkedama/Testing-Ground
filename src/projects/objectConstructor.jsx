@@ -71,8 +71,9 @@ function book(title, author, pages, read){
   this.pages = pages;
   this.read = read;
 }
-
+console.log('marking');
 book.prototype = Object.create(duplicateBookConstructor.prototype);
+// Object.setPrototypeOf(book.prototype, duplicateBookConstructor.prototype);
 
 const authorSettingOne = new book('Setting prototype', 'Indra', 400, true);
 const authorSettingTwo = new book('Setting prototype', 'Hanuman', 500, true);
@@ -83,16 +84,23 @@ authorSettingTwo.info();
 console.log(Object.getPrototypeOf(authorSettingOne) === book.prototype);
 console.log(Object.getPrototypeOf(authorSettingOne));
 
+console.log('-------');
+
 console.log(Object.getPrototypeOf(duplicateBookConstructor.prototype) === Object.prototype);
 console.log(authorSettingOne.valueOf());
+
+console.log('-------');
 
 console.log(authorSettingOne.hasOwnProperty('valueOf'));
 console.log(Object.prototype.hasOwnProperty('valueOf'));
 console.log(Object.prototype.hasOwnProperty('hasOwnProperty'));
 
+console.log('-------');
+
 console.log(Object.getPrototypeOf(duplicateBookConstructor.prototype));
 console.log(Object.getPrototypeOf(book.prototype));
 console.log(Object.prototype.valueOf());
 console.log(Object.getPrototypeOf(Object.prototype));
+
 
 export default objectConstructor

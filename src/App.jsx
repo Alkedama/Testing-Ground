@@ -9,7 +9,9 @@ import Grid from './projects/grid'
 import GridChrome from './projects/gridChrome'
 import GridAdvance from './projects/gridAdvance'
 import Test from './projects/test'
-import ObjectConstructor from './projects/objectConstructor'
+// import ObjectConstructor from './projects/objectConstructor'
+// import ObjectConstructorPart2 from './projects/objectConstructorPart2'
+// import ObjectConstructorPart3 from './projects/objectConstructorPart3'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -21,7 +23,6 @@ function App() {
     {/* <GridChrome /> */}
     {/* <GridAdvance /> */}
     {/* <Test /> */}
-    <ObjectConstructor />
     </>
   )
 }
