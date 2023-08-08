@@ -12,6 +12,7 @@ import Test from './projects/test'
 // import ObjectConstructor from './projects/objectConstructor'
 // import ObjectConstructorPart2 from './projects/objectConstructorPart2'
 // import ObjectConstructorPart3 from './projects/objectConstructorPart3'
+import ObjectConstructorPart4 from './projects/objectConstructorPart4'
 
 function App() {
   const [count, setCount] = useState(0)
