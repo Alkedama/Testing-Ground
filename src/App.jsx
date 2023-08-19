@@ -8,11 +8,12 @@ import Header from './components/header'
 import Grid from './projects/grid'
 import GridChrome from './projects/gridChrome'
 import GridAdvance from './projects/gridAdvance'
-import Test from './projects/test'
+// import Test from './projects/test'
 // import ObjectConstructor from './projects/objectConstructor'
 // import ObjectConstructorPart2 from './projects/objectConstructorPart2'
 // import ObjectConstructorPart3 from './projects/objectConstructorPart3'
-import ObjectConstructorPart4 from './projects/objectConstructorPart4'
+// import ObjectConstructorPart4 from './projects/objectConstructorPart4'
+import IIFE from './projects/IIFE'
 
 function App() {
   const [count, setCount] = useState(0)
